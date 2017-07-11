@@ -9,11 +9,11 @@ router.get('/', function(req, res, next) {
 
 
 // 增加用户
-router.post('/addUser', function(req, res, next) {
+router.post('/regist', function(req, res, next) {
 	userDao.add(req, res, next);
 });
 //用户登陆
-router.post('/query', function(req, res, next) {
+router.post('/login', function(req, res, next) {
 	userDao.query(req, res, next);
 });
 
